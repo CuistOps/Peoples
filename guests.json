@@ -22,7 +22,6 @@
     "avatar": "https://media.licdn.com/dms/image/v2/D4E03AQHM1GqTyzjEHA/profile-displayphoto-scale_400_400/B4EZqjJvsYIQAg-/0/1763673832834?e=1776902400&v=beta&t=IHEoVpje-1gh6Mh1-S5lOuasDPZ-vOnFJ0_dvPbrFv4",
     "linkedin": "https://www.linkedin.com/in/jseguillon/",
     "bluesky": "https://bsky.app/profile/jseguillon.bsky.social/",
-    "twitter": null,
     "github": "https://github.com/jseguillon/",
     "tags": ["DAPR", "KubeVirt", "Cloud Architecture"]
   },
@@ -35,10 +34,22 @@
     "avatar": "https://media.licdn.com/dms/image/v2/D4E03AQFx_uDsiJOvwA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1689148400243?e=1776902400&v=beta&t=79wPw-1PAgdXTL9ZRcA8_ieFTB886pZMTSWX_WUjwdg",
     "linkedin": "https://www.linkedin.com/in/joseph-ligier-4b86632/",
     "bluesky": "https://bsky.app/profile/josephligier.bsky.social",
-    "twitter": null,
     "github": "https://github.com/littlejo",
-    "blog": "https://blog.littlejo.link/en/",
-    "rss": "https://blog.littlejo.link/en/index.xml",
+    "blog": "https://blog.littlejo.link/",
+    "rss": "https://blog.littlejo.link/index.xml",
+    "tags": ["Cilium", "Kubestronaut", "Open Source"]
+  }
+  {
+    "id": 4,
+    "name": "Maxime Leriche",
+    "title": "Ingénieur Couche d'Echange DevOps",
+    "role": "guest",
+    "bio": "Streamer et créateur de contenu sur les technologies cloud-native, avec un focus sur Talos / Kubevirt / Proxmox / Terraform.",
+    "avatar": "https://avatars.githubusercontent.com/u/24699592?v=4",
+    "linkedin": "https://www.linkedin.com/in/maxime-leriche-weebo/",
+    "bluesky": "https://bsky.app/profile/maxweebo.bsky.social",
+    "github": "https://github.com/batleforc/",
+    "blog": "https://batleforc.github.io/weebo-si/0.introduction/home.html",
     "tags": ["Cilium", "Kubestronaut", "Open Source"]
   }
 ]
