@@ -18,6 +18,7 @@
       --bluesky: #0085ff;
       --twitter: #1d9bf0;
       --github: #e6edf3;
+      --rss: #f26522;
       --radius: 14px;
       --shadow: 0 4px 24px rgba(0,0,0,0.4);
     }
@@ -256,73 +257,6 @@
 
     .guest-card:hover .avatar { border-color: var(--accent); }
 
-    /* ── Episodes dropdown ── */
-    .episodes-dropdown {
-      position: relative;
-    }
-
-    .episodes-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 12px;
-      background: var(--accent-soft);
-      border: 1px solid rgba(108, 99, 255, 0.3);
-      border-radius: 8px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      white-space: nowrap;
-    }
-
-    .episodes-btn:hover {
-      background: rgba(108, 99, 255, 0.25);
-      border-color: var(--accent);
-    }
-
-    .episodes-btn svg {
-      width: 12px;
-      height: 12px;
-      transition: transform 0.2s;
-      flex-shrink: 0;
-    }
-
-    .episodes-dropdown.open .episodes-btn svg { transform: rotate(180deg); }
-
-    .episodes-list {
-      display: none;
-      position: absolute;
-      bottom: calc(100% + 6px);
-      left: 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 6px;
-      min-width: 200px;
-      z-index: 20;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-    }
-
-    .episodes-dropdown.open .episodes-list { display: block; }
-
-    .episodes-list li {
-      list-style: none;
-      padding: 7px 10px;
-      border-radius: 6px;
-      font-size: 12px;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-
-    .episodes-list li::before {
-      content: '▶';
-      margin-right: 7px;
-      font-size: 9px;
-      color: var(--accent);
-    }
-
     .card-info { flex: 1; min-width: 0; }
 
     .guest-name {
@@ -462,6 +396,16 @@
     .social-link.github:hover {
       background: rgba(230, 237, 243, 0.15);
       border-color: var(--github);
+    }
+
+    .social-link.rss {
+      color: var(--rss);
+      border-color: rgba(242, 101, 34, 0.3);
+      background: rgba(242, 101, 34, 0.08);
+    }
+    .social-link.rss:hover {
+      background: rgba(242, 101, 34, 0.2);
+      border-color: var(--rss);
     }
 
     /* ── Blog (mis en valeur) ── */
@@ -686,6 +630,7 @@
     bluesky: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>`,
     twitter: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.243 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
     github: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>`,
+    rss: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>`,
     blog: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>`
   };
 
@@ -732,6 +677,7 @@
       socialLink(g.bluesky, 'bluesky', 'Bluesky'),
       socialLink(g.twitter, 'twitter', 'X / Twitter'),
       socialLink(g.github, 'github', 'GitHub'),
+      socialLink(g.rss, 'rss', 'Flux RSS'),
     ].filter(Boolean).join('');
 
     const blogBtn = g.blog
@@ -739,17 +685,6 @@
       : '';
 
     const roleLabel = g.role === 'guest' ? 'Guest' : 'Cuistot';
-
-    const episodes = Array.isArray(g.episodes) ? g.episodes : (g.episode ? [g.episode] : []);
-    const episodesDropdown = episodes.length > 0 ? `
-      <div class="episodes-dropdown" onclick="event.stopPropagation()">
-        <button class="episodes-btn" onclick="this.closest('.episodes-dropdown').classList.toggle('open')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          ${episodes.length} épisode${episodes.length > 1 ? 's' : ''}
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <ul class="episodes-list">${episodes.map(e => `<li>${e}</li>`).join('')}</ul>
-      </div>` : '';
 
     return `
       <article class="guest-card" data-id="${g.id}">
@@ -769,7 +704,6 @@
           <div class="card-footer">
             <div class="social-links">
               ${socials}
-              ${episodesDropdown}
             </div>
             ${blogBtn}
           </div>
@@ -812,7 +746,6 @@
         g.name.toLowerCase().includes(q) ||
         g.title.toLowerCase().includes(q) ||
         g.bio.toLowerCase().includes(q) ||
-        (Array.isArray(g.episodes) && g.episodes.some(e => e.toLowerCase().includes(q))) ||
         g.tags.some(t => t.toLowerCase().includes(q))
       );
     }
@@ -820,10 +753,6 @@
   }
 
   document.getElementById('search').addEventListener('input', applyFilters);
-
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.episodes-dropdown.open').forEach(d => d.classList.remove('open'));
-  });
 
   loadGuests();
 </script>

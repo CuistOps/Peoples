@@ -28,6 +28,9 @@ jobs:
       - name: Validate guests.json
         run: python3 -c "import json, sys; json.load(open('guests.json')); print('guests.json is valid')"
 
+      - name: Generate OPML
+        run: node --experimental-vm-modules generate-opml.js cuistops-guests.opml 2>/dev/null || node generate-opml.js cuistops-guests.opml
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
