@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Quentin JOLY",
+    "title": "SRE chez Lucca",
+    "episode": null,
+    "bio": "Blogger, speaker et passionné des technologies cloud-native. Ambassadeur Talos et soon-to-be Kubestronaut !",
+    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hqnyog7skad6m4aejb2yujxy/bafkreiclf2okoz2sjzudxmuxq2w75mdfdqxelxoaustvuzszrykyq467vy",
+    "linkedin": "https://www.linkedin.com/in/quentin-joly-it/",
+    "bluesky": "https://bsky.app/profile/une-tasse-de.cafe",
+    "github": "https://github.com/qjoly",
+    "blog": "https://une-tasse-de.cafe",
+    "tags": ["SRE", "Talos", "Kubestronaut"]
+  },
+  {
+    "id": 2,
+    "name": "Joel Seguillon",
+    "title": "SRE & cloud architect chez GroupBees",
+    "episode": "null",
+    "bio": "Expert Kubevirt et DAPR-enjoyeur, il est l'initiateur de la communauté CuistOps",
+    "avatar": "https://media.licdn.com/dms/image/v2/D4E03AQHM1GqTyzjEHA/profile-displayphoto-scale_400_400/B4EZqjJvsYIQAg-/0/1763673832834?e=1776902400&v=beta&t=IHEoVpje-1gh6Mh1-S5lOuasDPZ-vOnFJ0_dvPbrFv4",
+    "linkedin": "https://www.linkedin.com/in/jseguillon/",
+    "bluesky": "https://bsky.app/profile/jseguillon.bsky.social/",
+    "twitter": null,
+    "github": "https://github.com/jseguillon/",
+    "tags": ["DAPR", "KubeVirt", "Cloud Architecture"]
+  },
+  {
+    "id": 3,
+    "name": "Joseph Ligier",
+    "title": "Ingénieur cloud chez Accenture",
+    "episode": null,
+    "bio": "Conçoit des plateformes internes pour accélérer la livraison logicielle.",
+    "avatar": "https://media.licdn.com/dms/image/v2/D4E03AQFx_uDsiJOvwA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1689148400243?e=1776902400&v=beta&t=79wPw-1PAgdXTL9ZRcA8_ieFTB886pZMTSWX_WUjwdg",
+    "linkedin": "https://www.linkedin.com/in/joseph-ligier-4b86632/",
+    "bluesky": "https://bsky.app/profile/josephligier.bsky.social",
+    "twitter": null,
+    "github": "https://github.com/littlejo",
+    "tags": ["Cilium", "Kubestronaut", "Open Source"]
+  }
+]
