@@ -38,7 +38,7 @@
     "blog": "https://blog.littlejo.link/",
     "rss": "https://blog.littlejo.link/index.xml",
     "tags": ["Cilium", "Kubestronaut", "Open Source"]
-  }
+  },
   {
     "id": 4,
     "name": "Maxime Leriche",
