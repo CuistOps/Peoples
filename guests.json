@@ -79,5 +79,19 @@
     "blog": "https://www.damyr.fr/ ",
     "rss": "https://www.damyr.fr/index.xml",
     "tags": ["Terraform", "Blog"]
+  },
+  {
+    "id": 7,
+    "name": "Julien HOMMET",
+    "title": "SRE - CTO - DevOps Engineer",
+    "roles": ["blog"],
+    "bio": "Bercé par le domaine informatique depuis l'âge de 4 ans, je transforme ma passion en expertise. Mes domaines de prédilection sont l'infrastructure as code, la sécurité et la virtualisation.",
+    "avatar": "https://avatars.githubusercontent.com/u/1405143",
+    "linkedin": "https://www.linkedin.com/in/julienhommet/",
+    "bluesky": "https://bsky.app/profile/julien.hommet.net",
+    "github": "https://github.com/julienhmmt",
+    "blog": "https://j.hommet.net",
+    "rss": "https://j.hommet.net/index.xml",
+    "tags": ["Blog", "Kubernetes", "OpenTofu", "Proxmox", "SRE", "Talos", "Terraform"]
   }
 ]
