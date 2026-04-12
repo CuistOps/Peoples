@@ -79,5 +79,19 @@
     "blog": "https://www.damyr.fr/ ",
     "rss": "https://www.damyr.fr/index.xml",
     "tags": ["Terraform", "Blog"]
+  },
+  {
+    "id": 8,
+    "name": "Jérémy Chabernaud",
+    "title": "Architecte Cloud Solutions @ AQR8",
+    "roles": ["blog"],
+    "bio": "Passionné des technologies cloud-native, Kubernetes, Blockchain et de Hacking. Développeur Python (Golang en apprentissage).",
+    "avatar": "https://avatars.githubusercontent.com/u/2886596",
+    "linkedin": "https://www.linkedin.com/in/djerfy/",
+    "bluesky": "https://bsky.app/profile/djerfy.bsky.social",
+    "github": "https://github.com/djerfy",
+    "blog": "https://xorhak.fr/",
+    "rss": "https://xorhak.fr/rss/",
+    "tags": ["Blog", "Kubernetes", "Hacking", "Blockchain"]
   }
 ]
